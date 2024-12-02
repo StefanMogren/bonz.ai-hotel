@@ -5,7 +5,7 @@
 }
 
 .header {
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -27,14 +27,18 @@
     font-size: 1.5rem;
     color: black;
 }
-
-.main-grid {
+.wrapper {
     max-width: 1000px;
     margin-inline: auto;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Huvudinnehållet börjar här */
+.main-grid {
     background-color: antiquewhite;
+    display: grid;
+    padding: 1rem;
+    gap: 2rem 0;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .main-grid__inner-grid {
@@ -50,25 +54,28 @@
 .main-grid__img {
     width: 100%;
     background-color: aliceblue;
+    align-self: center;
+}
+
+.main-grid__img--span-7 {
+    grid-column: span 7;
 }
 
 .main-grid__article {
     grid-column: span 5;
-    padding: 1rem;
 }
 
 .main-grid__title {
-
+    font-size: 3rem;
 }
 
 .main-grid__text {
-
+ font-size: 1.5rem;
 }
 
 
 .call-to-action {
     grid-column: span 12;
-    padding: 1rem;
     text-align: center;
 }
 
@@ -111,5 +118,31 @@
     justify-self: center;
     align-self: center;
     height: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer-grid {
+    padding: 1rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background-color: gainsboro;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.footer-grid__container {
+    grid-column: span 1;
+}
+
+.footer-grid__img {
+    width: 40px;
+}
+
+.footer-grid__img--width-50 {
+    width: 50%;
+}
+
+.footer-grid__title {
     font-size: 1.5rem;
 }

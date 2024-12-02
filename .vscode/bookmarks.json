@@ -1,0 +1,34 @@
+{
+	"files": [
+		{
+			"path": "index.html",
+			"bookmarks": [
+				{
+					"line": 9,
+					"column": 3,
+					"label": "Header"
+				},
+				{
+					"line": 36,
+					"column": 2,
+					"label": "Main"
+				},
+				{
+					"line": 51,
+					"column": 8,
+					"label": "Call to action"
+				},
+				{
+					"line": 69,
+					"column": 12,
+					"label": "Forms"
+				},
+				{
+					"line": 105,
+					"column": 4,
+					"label": "Footer"
+				}
+			]
+		}
+	]
+}
