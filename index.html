@@ -7,19 +7,95 @@
     <title>Bonz.ai</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <img class="header__img" src="./assets/logo/bonz.ai-logo-black-landscape.png" alt="">
+    <header class="header">
+        <a class="header__img-link" href="./index.html">
+            <img class="header__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="Logo of bonz.ai">
+        </a>
+        <nav>
             <ul class="header__unordered-list">
-                <li class="header__list-item"><a href="./search-rooms.html">Våra rum</a></li>
-                <li class="header__list-item"><a href="./our-hotel.html">Hotell</a></li>
-                <li class="header__list-item"><a href="#">AI rådgivning</a></li>
-                <li class="header__list-item"><a href="#">Restaurang</a></li>
-                <li class="header__list-item"><a href="#">Kontakta oss</a></li>
+                <li class="header__list-item">
+                    <a class="header__list-item-link" href="./search-rooms.html">Våra rum</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-item-link" href="./our-hotel.html">Hotell</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-item-link" href="#">AI rådgivning</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-item-link" href="#">Restaurang</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-item-link" href="#">Kontakta oss</a>
+                </li>
             </ul>
-        </header>
+        </nav>
+    </header>
+    
+    <!-- Main -->
+    <main class="main-grid">
+        <section class="main-grid__inner-grid">
+            <img class="main-grid__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="">
+            <img class="main-grid__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="">
+            <img class="main-grid__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="">
+            <img class="main-grid__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="">
+        </section>
+        <article class="main-grid__article">
+            <h2 class="main-grid__title">Råd av AI</h2>
+            <p class="main-grid__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur quae alias assumenda quia vero sed culpa consectetur eos distinctio?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A tempora perspiciatis dolor sit iusto, eos adipisci distinctio obcaecati recusandae nam iure rerum provident quibusdam minima?
+            </p>
+        </article>
 
-        
-    </div>
+        <!-- Datumssökningsfältet i mitten av sidan -->
+        <section class="call-to-action">
+            <ul class="call-to-action__unordered-list">
+                <li class="call-to-action__list-item">
+                    <a class="call-to-action__list-item-link" href="./search-rooms.html">Boka rum</a>
+                </li>
+                <li class="call-to-action__list-item">
+                    <a class="call-to-action__list-item-link" href="#">Boka AI</a>
+                </li>
+                <li class="call-to-action__list-item">
+                    <a class="call-to-action__list-item-link" href="#">Reservera bord</a>
+                </li>
+                <li class="call-to-action__list-item">
+                    <a class="call-to-action__list-item-link" href="#">Paketerbjudande</a>
+                </li>
+            </ul>
+            <h3 class="call-to-action__title">Sök efter datum för rumsbokning</h3>
+
+            <!-- Datumväljning, antar gäster och rum samt sökning -->
+            <form class="call-to-action__grid">
+                <section class="call-to-action__inner-grid">
+                    <fieldset class="call-to-action__fieldset">
+                        <legend class="call-to-action__legend">Datum från</legend>
+                        <input name="date-from" id="date-from" class="call-to-action__input" type="date" max="">
+                    </fieldset>
+                    <fieldset class="call-to-action__fieldset">
+                        <legend class="call-to-action__legend">Antal gäster</legend>
+                        <input class="call-to-action__input" type="number" min="1" max="7">
+                    </fieldset>
+                    <fieldset class="call-to-action__fieldset">
+                        <legend class="call-to-action__legend">Datum till</legend>
+                        <input name="date-to" id="date-to" class="call-to-action__input" type="date" max="">
+                    </fieldset>
+                    <fieldset class="call-to-action__fieldset">
+                        <legend class="call-to-action__legend">Antal rum</legend>
+                        <input class="call-to-action__input" type="number" min="1" max="7">
+                    </fieldset>
+
+                </section>
+                <input class="call-to-action__input" type="submit" value="Sök">
+            </form>
+        </section>
+        <section class="main-grid__inner-grid">
+            <article>
+                <h2>Grön restaurang</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, enim. Iusto sunt voluptates, nulla quod dolores labore nemo adipisci excepturi!</p>
+            </article>
+            <img src="./assets/logo/bonz.ai-logo-black-landscape.png" alt="">
+        </section>
+    </main>
 </body>
 </html>
