@@ -38,77 +38,91 @@
 }
 
 /* Huvudinnehållet börjar här */
-.main-grid {
-    display: grid;
+.main-content {
     padding: 1rem;
-    gap: 2rem 0;
-    grid-template-columns: repeat(12, 1fr);
 }
 
-.main-grid__title {
+.main-content__title {
     font-size: 4rem;
     grid-column: span 12;
     text-align: center;
 }
 
-.main-grid__inner-grid {
+.main-content__grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main-content__grid--grid-column-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.main-content__container {
+}
+
+.main-content__container--inner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.main-content__container--span-5 {
+    grid-column: span 5;
+}
+
+.main-content__container--span-6 {
+    grid-column: span 6;
+}
+
+.main-content__container--span-7 {
+    grid-column: span 7;
+}
+
+/* .main-content__container--span-12 {
+    grid-column: span 7;
+} */
+
+
+.main-content__inner-grid {
     grid-column: span 7;
     display: grid;
     gap: .5rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.main-grid__img {
+.main-content__img {
     width: 100%;
     background-color: aliceblue;
     align-self: center;
 }
 
-.main-grid__img--span-7 {
+.main-content__img--span-7 {
     grid-column: span 7;
 }
 
-.main-grid__img--span-6 {
+.main-content__img--span-6 {
     grid-column: span 6;
 }
 
-.main-grid__article {
-    grid-column: span 5;
-    margin: 1rem 0;
-}
-
-.main-grid__article--span-6 {
-    grid-column: span 6;
-}
-
-.main-grid__article--margin-left {
-    margin-left: 1rem;
-}
-
-.main-grid__article--margin-right {
-    margin-right: 1rem;
-}
-
-.main-grid__sub-title {
+.main-content__sub-title {
     font-size: 3rem;
 }
 
-/* .main-grid__sub-title--span-12 {
-    grid-column: span 12;
-} */
-
-.main-grid__text {
- font-size: 1.5rem;
+.main-content__sub-title--span-5 {
+    grid-column: span 5;
 }
 
-.main-grid__separator {
+.main-content__text {
+    font-size: 1.5rem;
+}
+
+.main-content__separator {
     border: 3px black solid;
     grid-column: span 12;
     margin: 2rem 0;
-}
-
-.main-grid__section {
-    grid-column: span 12;
 }
 
 .call-to-action {
@@ -172,7 +186,7 @@
     align-items: center;
     background-color: gainsboro;
     grid-template-columns: repeat(3, 1fr);
-
+    
 }
 
 .footer-grid__container {
