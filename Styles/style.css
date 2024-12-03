@@ -8,16 +8,21 @@
     width: 100%;
     padding: 1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     background: gainsboro;
 }
 
 .header__img {
-    width: 100px;
+    max-width: 100px;
+}
+
+.header__navigation {
+    width: 100%;
+    max-width: 900px;
 }
 
 .header__unordered-list {
-    width: 1000px;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -34,11 +39,16 @@
 
 /* Huvudinnehållet börjar här */
 .main-grid {
-    background-color: antiquewhite;
     display: grid;
     padding: 1rem;
     gap: 2rem 0;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.main-grid__title {
+    font-size: 4rem;
+    grid-column: span 12;
+    text-align: center;
 }
 
 .main-grid__inner-grid {
@@ -46,9 +56,6 @@
     display: grid;
     gap: .5rem;
     grid-template-columns: repeat(2, 1fr);
-    /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%); */
 }
 
 .main-grid__img {
@@ -65,7 +72,15 @@
     grid-column: span 5;
 }
 
-.main-grid__title {
+.main-grid__article--margin-left {
+    margin-left: 1rem;
+}
+
+.main-grid__article--margin-right {
+    margin-right: 1rem;
+}
+
+.main-grid__sub-title {
     font-size: 3rem;
 }
 
@@ -73,10 +88,11 @@
  font-size: 1.5rem;
 }
 
-
 .call-to-action {
+    padding: 1rem;
     grid-column: span 12;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 .call-to-action__unordered-list {
@@ -92,6 +108,10 @@
     color: black;
 }
 
+.call-to-action__title {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+}
 
 .call-to-action__grid {
     display: grid;
@@ -122,6 +142,7 @@
 }
 
 .footer-grid {
+    margin-top: 5rem;
     padding: 1rem;
     display: grid;
     text-align: center;
@@ -144,5 +165,6 @@
 }
 
 .footer-grid__title {
+    margin-top: 1rem;
     font-size: 1.5rem;
 }
