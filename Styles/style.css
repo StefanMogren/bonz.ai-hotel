@@ -68,8 +68,17 @@
     grid-column: span 7;
 }
 
+.main-grid__img--span-6 {
+    grid-column: span 6;
+}
+
 .main-grid__article {
     grid-column: span 5;
+    margin: 1rem 0;
+}
+
+.main-grid__article--span-6 {
+    grid-column: span 6;
 }
 
 .main-grid__article--margin-left {
@@ -84,8 +93,22 @@
     font-size: 3rem;
 }
 
+/* .main-grid__sub-title--span-12 {
+    grid-column: span 12;
+} */
+
 .main-grid__text {
  font-size: 1.5rem;
+}
+
+.main-grid__separator {
+    border: 3px black solid;
+    grid-column: span 12;
+    margin: 2rem 0;
+}
+
+.main-grid__section {
+    grid-column: span 12;
 }
 
 .call-to-action {
