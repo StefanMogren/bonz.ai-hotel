@@ -55,32 +55,134 @@
             </search>
             
             <!-- Korten för varje rum -->
-            <article class="main-content__grid">
+            <!-- Första rummet -->
+            <article class="main-content__grid main-content__grid--background-color-aliceblue">
                 <section class="main-content__container main-content__container--span-5">
                     <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                    <section class="main-content__flex">
-                      <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                      <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                      <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">  
+                    <section class="main-content__inner-grid main-content__inner-grid--columns-3">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">  
                     </section>
                 </section>
-                <section class="main-content__container main-content__container--span-7">
-                    <h3>Enkel dubbelrum</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, esse.</p>
-                    <button>Mer information ></button>
-                    <ul>
-                        <li>Två enkelsängar</li>
-                        <li>Eget gym</li>
-                        <li>Skrivbord</li>
-                        <li>Gratis WiFi</li>
-                        <li>Badrum</li>
-                        <li>WC</li>
-                        <li>Dusch</li>
+                <section class="main-content__container main-content__container--margin-1 main-content__container--span-7">
+                    <h3 class="main-content__sub-title main-content__sub-title--font-size-2">Enkel dubbelrum</h3>
+                    <p class="main-content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, esse.</p>
+                    <button class="main-content__button main-content__button--font main-content__button--background-none">Mer information ></button>
+                    <ul class="main-content__unordered-list">
+                        <li class="main-content__list-item">Två enkelsängar</li>
+                        <li class="main-content__list-item">Eget gym</li>
+                        <li class="main-content__list-item">Skrivbord</li>
+                        <li class="main-content__list-item">Gratis WiFi</li>
+                        <li class="main-content__list-item">Badrum</li>
+                        <li class="main-content__list-item">WC</li>
+                        <li class="main-content__list-item">Dusch</li>
                     </ul>
-                    <hr>
-                    <p>Från 3 033 SEK</p>
-                    <p>för 2 nätter, 2 gäster</p>
-                    <button>VÄLJ</button>
+                    <hr class="main-content__separator">
+                    <section class="main-content__flex">
+                        <p class="main-content__text">Från 3 033 SEK <br><span>för 2 nätter, 2 gäster</span></p>
+                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ ></button>
+                    </section>
+                </section>
+            </article>
+            
+            <!-- Andra rummet -->
+            <article class="main-content__grid main-content__grid--background-color-aliceblue">
+                <section class="main-content__container main-content__container--span-5">
+                    <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                    <section class="main-content__inner-grid main-content__inner-grid--columns-3">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">  
+                    </section>
+                </section>
+                <section class="main-content__container main-content__container--margin-1 main-content__container--span-7">
+                    <h3 class="main-content__sub-title main-content__sub-title--font-size-2">Dubbelrum</h3>
+                    <p class="main-content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, esse.</p>
+                    <button class="main-content__button main-content__button--font main-content__button--background-none">Mer information ></button>
+                    <ul class="main-content__unordered-list">
+                        <li class="main-content__list-item">Dubbelsäng</li>
+                        <li class="main-content__list-item">Eget gym</li>
+                        <li class="main-content__list-item">Skrivbord</li>
+                        <li class="main-content__list-item">Gratis WiFi</li>
+                        <li class="main-content__list-item">Badrum</li>
+                        <li class="main-content__list-item">WC</li>
+                        <li class="main-content__list-item">Dusch</li>
+                    </ul>
+                    <hr class="main-content__separator">
+                    <section class="main-content__flex">
+                        <p class="main-content__text">Från 3 033 SEK <br><span>för 2 nätter, 2 gäster</span></p>
+                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ ></button>
+                    </section>
+                </section>
+            </article>
+            
+            <!-- Valen av hur man vill boka rummet -->
+            <div aria-hidden="true" class="main-content__empty-figure"></div>
+            <section class="main-content__grid main-content__grid--margin-1 main-content__grid--padding main-content__grid--background-color-black">
+                <p class="main-content__text main-content__text--color-white main-content__text--span-3">Erbjudande</p>
+                <p class="main-content__text main-content__text--color-white main-content__text--span-3">Villkor</p>
+                <p class="main-content__text main-content__text--color-white main-content__text--span-3">Dagens pris</p>
+            </section>
+            
+            <section class="main-content__grid main-content__grid--padding main-content__grid--border-left main-content__grid--margin-1 main-content__grid--background-color main-content__grid--align-center">
+                <p class="main-content__text main-content__text--span-3">Ej ombokningsbar</p>
+                <p class="main-content__text main-content__text--span-3">Ej återbetalningsbar<br>Se villkor</p>
+                <section class="main-content__container main-content__container--inner-grid main-content__container--span-4">
+                    <p class="main-content__text">3 033 SEK<br>för två vuxna</p>
+                    <button class="main-content__button main-content__button--padding main-content__button--font">BOKA</button>
+                    
+                </section>
+            </section>
+
+            <section class="main-content__grid main-content__grid--padding main-content__grid--border-left main-content__grid--margin-1 main-content__grid--align-center main-content__grid--background-color">
+                <p class="main-content__text main-content__text--span-3">Standard</p>
+                <p class="main-content__text main-content__text--span-3">Fri avbokning <br>fram till 16 Jan<br>Se villkor</p>
+                <section class="main-content__container main-content__container--inner-grid main-content__container--span-4">
+                    <p class="main-content__text">3 663 SEK<br>för två vuxna</p>
+                    <button class="main-content__button main-content__button--padding main-content__button--font">BOKA</button>
+                    
+                </section>
+            </section>
+
+            <section class="main-content__grid main-content__grid--padding main-content__grid--border-left main-content__grid--margin-1 main-content__grid--align-center main-content__grid--background-color">
+                <p class="main-content__text main-content__text--span-3">Frukost och middag</p>
+                <p class="main-content__text main-content__text--span-3">Fri avbokning <br>fram till 16 Jan<br>Se villkor</p>
+                <section class="main-content__container main-content__container--inner-grid main-content__container--span-4">
+                    <p class="main-content__text">4 023 SEK<br>för två vuxna</p>
+                    <button class="main-content__button main-content__button--padding main-content__button--font">BOKA</button>
+                    
+                </section>
+            </section>
+            
+            <!-- Tredje rummet -->
+            <article class="main-content__grid main-content__grid--background-color-aliceblue">
+                <section class="main-content__container main-content__container--span-5">
+                    <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                    <section class="main-content__inner-grid main-content__inner-grid--columns-3">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+                        <img class="main-content__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">  
+                    </section>
+                </section>
+                <section class="main-content__container main-content__container--margin-1 main-content__container--span-7">
+                    <h3 class="main-content__sub-title main-content__sub-title--font-size-2">Dubbelrum utsikt</h3>
+                    <p class="main-content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, esse.</p>
+                    <button class="main-content__button main-content__button--font main-content__button--background-none">Mer information ></button>
+                    <ul class="main-content__unordered-list">
+                        <li class="main-content__list-item">Dubbelsäng</li>
+                        <li class="main-content__list-item">Eget gym</li>
+                        <li class="main-content__list-item">Skrivbord</li>
+                        <li class="main-content__list-item">Gratis WiFi</li>
+                        <li class="main-content__list-item">Badrum</li>
+                        <li class="main-content__list-item">WC</li>
+                        <li class="main-content__list-item">Dusch</li>
+                    </ul>
+                    <hr class="main-content__separator">
+                    <section class="main-content__flex">
+                        <p class="main-content__text">Från 3 533 SEK <br><span>för 2 nätter, 2 gäster</span></p>
+                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ ></button>
+                    </section>
                 </section>
             </article>
         </main>
