@@ -103,7 +103,6 @@
 
 .main-content__container--padding-1 {
     padding: 1rem;
-
 }
 
 .main-content__container--background-color {
@@ -146,6 +145,13 @@
     display: grid;
     gap: .5rem;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.main-content__flex {
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-column: span 3; */
+    width: 200px;
 }
 
 .main-content__img {
