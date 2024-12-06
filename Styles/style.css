@@ -104,6 +104,7 @@
 /* Alla texter */
 .main-content__text {
     font-size: 1.2rem;
+    hyphens: auto;
 }
 
 .main-content__text--flex-center {
@@ -169,8 +170,9 @@
     grid-template-columns: repeat(1, 1fr);
 }
 
-.main-content__container {
-}
+/* klassen under är tom med flit. Används som behållare. Modifiers ger den extra effekter */
+/* .main-content__container {
+} */
 
 .main-content__container--margin-1 {
     margin: 1rem;
@@ -233,8 +235,6 @@
     display: flex;
     justify-content: space-between;
     margin: 1rem 0;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-column: span 3; */
 }
 
 .main-content__img {
@@ -376,7 +376,7 @@
 }
 
 .footer-grid {
-    margin-top: 5rem;
+    /* margin-top: 1rem; */
     padding: 1rem;
     display: grid;
     text-align: center;
@@ -403,7 +403,7 @@
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 750px) {
     
     .header__unordered-list {
         display: none;
@@ -428,6 +428,7 @@
         opacity: 0;
     }
     
+    /* Jag fuskar och använder en "osynlig" checkbox ovanpå min hamburgermeny för att få navigationslistan att både dyka upp och vara klickbar. */
     .header__checkbox:checked~.header__unordered-list {
         position: absolute;
         background-color: gainsboro;
@@ -453,18 +454,19 @@
         grid-template-columns: repeat(1, 1fr);
     }
     
+    .main-content__container--span-3 {
+        grid-column: span 6;
+    }
+    
     .main-content__container--span-5 {
         grid-column: span 6;
     }
+    
     .main-content__container--span-6 {
         grid-column: span 6;
     }
     
     .main-content__container--span-7 {
-        grid-column: span 6;
-    }
-    
-    .main-content__container--span-3 {
         grid-column: span 6;
     }
     
@@ -533,6 +535,28 @@
     
     .footer-grid {
         grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        grid-template-areas:
+        "social-media"
+        "address"
+        "bonzai-logo";
     }
+    
+    .footer-grid__container--grid-area-one {
+        grid-area: address;
+    }
+    
+    .footer-grid__container--grid-area-two {
+        grid-area: bonzai-logo;
+    }
+    
+    .footer-grid__container--grid-area-three {
+        grid-area: social-media;
+    }
+
+        .footer-grid__img--width-50 {
+            width: 150px;
+        }
     
 }
