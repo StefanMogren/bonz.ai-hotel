@@ -264,10 +264,6 @@
     margin: 2rem 0;
 }
 
-.main-content__button {
-    border: none;
-}
-
 .main-content__button--padding {
     padding: 0 1rem;
 }
@@ -290,7 +286,6 @@
 .main-content__button--translate-x {
     transform: translate(-100%, -50%);
 }
-
 
 .main-content__button--background-none {
     background: none;
@@ -429,6 +424,8 @@
     }
     
     /* Jag fuskar och använder en "osynlig" checkbox ovanpå min hamburgermeny för att få navigationslistan att både dyka upp och vara klickbar. */
+    /* Detta är för att jag kunde inte få den vanliga knappen till att göra samma sak. */
+    /* Hade vi haft tillgång till JavaScript så hade detta varit löst med enbart knappen. */
     .header__checkbox:checked~.header__unordered-list {
         position: absolute;
         background-color: gainsboro;

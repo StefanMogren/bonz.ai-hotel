@@ -7,13 +7,13 @@
     <title>Bonz.ai</title>
 </head>
 <body>
-        <header class="header">
+    <header class="header">
         <a class="header__img-link" href="./index.html">
-            <img class="header__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="Loggan för bonz.ai">
+            <img class="header__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="Logo of bonz.ai">
         </a>
         <nav class="header__navigation">
-            <button class="header__button header__button--display"></button>
-            <input class="header__checkbox" type="checkbox" name="" id="">
+            <button class="header__button header__button--display" aria-label="Menyknapp"></button>
+            <input class="header__checkbox" aria-label="Menyknapp" type="checkbox" name="hamburger-menu" id="hamburger-menu">
             <ul class="header__unordered-list">
                 <li class="header__list-item">
                     <a class="header__list-item-link" href="./search-rooms.html">Våra rum</a>
@@ -49,7 +49,7 @@
                     </p>
                 </section>
             </article>
-
+            
             <article class="main-content__grid">
                 <section class="main-content__container main-content__container--span-5">
                     <h2 class="main-content__sub-title">Eget minigym</h2>
@@ -77,27 +77,27 @@
                 <form class="call-to-action__grid">
                     <section class="call-to-action__inner-grid">
                         <fieldset class="call-to-action__fieldset call-to-action__fieldset--grid-area-one">
-                            <legend class="call-to-action__legend">Datum från</legend>
-                            <input name="date-from" id="date-from" class="call-to-action__input" type="date" max="">
+                            <legend class="call-to-action__legend" id="date-from">Datum från</legend>
+                            <input name="date-from" aria-labelledby="date-from" class="call-to-action__input" type="date">
                         </fieldset>
                         <fieldset class="call-to-action__fieldset call-to-action__fieldset--grid-area-two">
-                            <legend class="call-to-action__legend">Antal gäster</legend>
-                            <input class="call-to-action__input" type="number" min="1" max="7">
+                            <legend class="call-to-action__legend" id="number-of-guests">Antal gäster</legend>
+                            <input class="call-to-action__input" aria-labelledby="number-of-guests" type="number" min="1" max="7">
                         </fieldset>
                         <fieldset class="call-to-action__fieldset call-to-action__fieldset--grid-area-three">
-                            <legend class="call-to-action__legend">Datum till</legend>
-                            <input name="date-to" id="date-to" class="call-to-action__input" type="date" max="">
+                            <legend class="call-to-action__legend" id="date-to">Datum till</legend>
+                            <input name="date-to" aria-labelledby="date-to" class="call-to-action__input" type="date">
                         </fieldset>
                         <fieldset class="call-to-action__fieldset call-to-action__fieldset--grid-area-four">
-                            <legend class="call-to-action__legend">Antal rum</legend>
-                            <input class="call-to-action__input" type="number" min="1" max="7">
+                            <legend class="call-to-action__legend" id="number-of-rooms">Antal rum</legend>
+                            <input class="call-to-action__input" aria-labelledby="number-of-rooms" type="number" min="1" max="7">
                         </fieldset>
                         
                     </section>
                     <input class="call-to-action__input" type="submit" value="Sök">
                 </form>
             </section>
-
+            
             <article class="main-content__grid">
                 <section class="main-content__container main-content__container--span-5">
                     <h2 class="main-content__sub-title">Grön restaurang</h2>
@@ -117,9 +117,9 @@
         <!-- Footer -->
         <footer class="footer-grid">
             <section class="footer-grid__container footer-grid__container--grid-area-one">
-                <h4 class="footer-grid__title">Kontakta oss</h4>
+                <h3 class="footer-grid__title">Kontakta oss</h3>
                 <address>
-                    mejl@adress.se
+                    mejl@mejl@bonz.ai
                 </address>
                 <address>
                     +46 (0)123- 456 78
@@ -130,12 +130,12 @@
             </section>
             
             <section class="footer-grid__container footer-grid__container--grid-area-three">
-                <h4 class="footer-grid__title">Följ oss på sociala medier</h4>
+                <h3 class="footer-grid__title">Följ oss på sociala medier</h3>
                 <img class="footer-grid__img" src="./assets/logo/facebook-logo.svg" alt="Loggan för facebook">
                 <img class="footer-grid__img" src="./assets/logo/instagram-logo.svg" alt="Loggan för instagram">
                 <img class="footer-grid__img" src="./assets/logo/x-logo.svg" alt="Loggan för x">
                 
-                <h4 class="footer-grid__title">Dela med dina vänner!</h4>
+                <h3 class="footer-grid__title">Dela med dina vänner!</h3>
                 <img class="footer-grid__img" src="./assets/logo/facebook-logo.svg" alt="Loggan för facebook">
                 <img class="footer-grid__img" src="./assets/logo/instagram-logo.svg" alt="Loggan för instagram">
                 <img class="footer-grid__img" src="./assets/logo/x-logo.svg" alt="Loggan för x">

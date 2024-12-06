@@ -12,8 +12,8 @@
             <img class="header__img" src="./assets/logo/bonz.ai-logo-black-portrait.png" alt="Logo of bonz.ai">
         </a>
         <nav class="header__navigation">
-            <button class="header__button header__button--display"></button>
-            <input class="header__checkbox" type="checkbox" name="" id="">
+            <button class="header__button header__button--display" aria-label="Menyknapp"></button>
+            <input class="header__checkbox" aria-label="Menyknapp" type="checkbox" name="hamburger-menu" id="hamburger-menu">
             <ul class="header__unordered-list">
                 <li class="header__list-item">
                     <a class="header__list-item-link" href="./search-rooms.html">Våra rum</a>
@@ -40,9 +40,9 @@
             <h1 class="main-content__title">Välj en rumstyp</h1>
             
             <!-- "Du har sökt"-fältet -->
-            <search class="main-content__grid main-content__container--padding-1 main-content__grid--background-color">
+            <section class="main-content__grid main-content__container--padding-1 main-content__grid--background-color">
                 <section class="main-content__container main-content__container--background-color main-content__container--text-align-center main-content__container--span-3">
-                    <h3 class="main-content__sub-title main-content__sub-title--font-size-1-5 main-content__sub-title--background-color">Incheckning</h3>
+                    <h2 class="main-content__sub-title main-content__sub-title--font-size-1-5 main-content__sub-title--background-color">Incheckning</h2>
                     <p class="main-content__text main-content__text--padding-1">17 Januari<br> Fredag</p>
                 </section>
                 <section class="main-content__container main-content__container--span-6">
@@ -50,20 +50,20 @@
                     <p class="main-content__text">Antal nätter<span class="main-content__text--float-right">2 nätter</span><br> Antal rum <span class="main-content__text--float-right">1 rum, 2 gäster</span></p>
                 </section>
                 <section class="main-content__container main-content__container--background-color main-content__container--text-align-center main-content__container--span-3">
-                    <h3 class="main-content__sub-title main-content__sub-title--font-size-1-5 main-content__sub-title--background-color">Utcheckning</h3>
+                    <h2 class="main-content__sub-title main-content__sub-title--font-size-1-5 main-content__sub-title--background-color">Utcheckning</h2>
                     <p class="main-content__text main-content__text--padding-1">19 Januari<br> Fredag</p>
                 </section>
                 <button class="main-content__button main-content__button--span-12">ÄNDRA SÖKNING</button>
-            </search>
+            </section>
             
             <!-- Korten för varje rum -->
             <!-- Första rummet -->
             <article class="main-content__grid main-content__grid--background-color-aliceblue">
                 <section class="main-content__container main-content__container--span-5">
                     <section class="main-content__container main-content__container--position-relative">
-                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position"><</button>
+                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position">&lt;</button>
                         <img class="main-content__img" src="./assets/hotel-room/two-single.jpg" alt="Hotellrum med två enkelsängar, skrivbord och stol">
-                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position main-content__button--translate-x">></button>
+                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position main-content__button--translate-x">&gt;</button>
                     </section>
                 </section>
                 <section class="main-content__container main-content__container--margin-1 main-content__container--span-7">
@@ -82,7 +82,7 @@
                     <hr class="main-content__separator">
                     <section class="main-content__flex">
                         <p class="main-content__text">Från 3 033 SEK <br><span>för 2 nätter, 2 gäster</span></p>
-                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ ></button>
+                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ &gt;</button>
                     </section>
                 </section>
             </article>
@@ -91,9 +91,9 @@
             <article class="main-content__grid main-content__grid--background-color-aliceblue">
                 <section class="main-content__container main-content__container--span-5">
                     <section class="main-content__container main-content__container--position-relative">
-                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position"><</button>
+                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position">&lt;</button>
                         <img class="main-content__img" src="./assets/hotel-room/double.jpg" alt="Hotellrum med dubbelsäng, skrivbord och stol">
-                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position main-content__button--translate-x">></button>
+                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position main-content__button--translate-x">&gt;</button>
                     </section>
                 </section>
                 <section class="main-content__container main-content__container--margin-1 main-content__container--span-7">
@@ -112,7 +112,7 @@
                     <hr class="main-content__separator">
                     <section class="main-content__flex">
                         <p class="main-content__text">Från 3 033 SEK <br><span>för 2 nätter, 2 gäster</span></p>
-                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ ></button>
+                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ &gt;</button>
                     </section>
                 </section>
             </article>
@@ -134,24 +134,22 @@
                     
                 </section>
             </section>
-
+            
             <section class="main-content__grid main-content__grid--padding main-content__grid--border-left main-content__grid--margin-1 main-content__grid--align-center main-content__grid--background-color">
                 <p class="main-content__text main-content__text--span-4">Standard</p>
                 <p class="main-content__text main-content__text--span-4">Fri avbokning <br>fram till 16 Jan<br>Se villkor</p>
                 <section class="main-content__container main-content__container--inner-grid main-content__container--span-4">
                     <p class="main-content__text">3 663 SEK<br>för två vuxna</p>
                     <button class="main-content__button main-content__button--padding main-content__button--font">BOKA</button>
-                    
                 </section>
             </section>
-
+            
             <section class="main-content__grid main-content__grid--padding main-content__grid--border-left main-content__grid--margin-1 main-content__grid--align-center main-content__grid--background-color">
                 <p class="main-content__text main-content__text--span-4">Frukost och middag</p>
                 <p class="main-content__text main-content__text--span-4">Fri avbokning <br>fram till 16 Jan<br>Se villkor</p>
                 <section class="main-content__container main-content__container--inner-grid main-content__container--span-4">
                     <p class="main-content__text">4 023 SEK<br>för två vuxna</p>
                     <button class="main-content__button main-content__button--padding main-content__button--font">BOKA</button>
-                    
                 </section>
             </section>
             
@@ -159,9 +157,9 @@
             <article class="main-content__grid main-content__grid--background-color-aliceblue">
                 <section class="main-content__container main-content__container--span-5">
                     <section class="main-content__container main-content__container--position-relative">
-                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position"><</button>
+                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position">&lt;</button>
                         <img class="main-content__img" src="./assets/hotel-room/doublebed-view.jpg" alt="Hotellrum med dubbelsäng, skrivbord och stol samt fönster med utsikt mot växthuset">
-                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position main-content__button--translate-x">></button>
+                        <button class="main-content__button main-content__button--font-size-2 main-content__button--position main-content__button--translate-x">&gt;</button>
                     </section>
                 </section>
                 <section class="main-content__container main-content__container--margin-1 main-content__container--span-7">
@@ -180,37 +178,35 @@
                     <hr class="main-content__separator">
                     <section class="main-content__flex">
                         <p class="main-content__text">Från 3 533 SEK <br><span>för 2 nätter, 2 gäster</span></p>
-                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ ></button>
+                        <button class="main-content__button main-content__button--padding main-content__button--font">VÄLJ &gt;</button>
                     </section>
                 </section>
             </article>
         </main>
         
         <footer class="footer-grid">
-            <section class="footer-grid__container">
-                <h4 class="footer-grid__title">Kontakta oss</h4>
+            <section class="footer-grid__container footer-grid__container--grid-area-one">
+                <h3 class="footer-grid__title">Kontakta oss</h3>
                 <address>
-                    mejl@adress.se
+                    mejl@bonz.ai
                 </address>
                 <address>
                     +46 (0)123- 456 78
                 </address>
             </section>
-            <section class="footer-grid__container">
-                <img class="footer-grid__img footer-grid__img--width-50" src="./assets/logo/bonz.ai-logo-black-portrait-full.png" alt="">
-                
+            <section class="footer-grid__container footer-grid__container--grid-area-two">
+                <img class="footer-grid__img footer-grid__img--width-50" src="./assets/logo/bonz.ai-logo-black-portrait-full.png" alt="Loggan för bonz.ai">
             </section>
             
-            <section class="footer-grid__container">
-                <h4 class="footer-grid__title">Följ oss på sociala medier</h4>
-                <img class="footer-grid__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                <img class="footer-grid__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                <img class="footer-grid__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                
-                <h4 class="footer-grid__title">Dela med dina vänner!</h4>
-                <img class="footer-grid__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                <img class="footer-grid__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
-                <img class="footer-grid__img" src="./assets/logo/bonz.ai-logo-black-symbol.png" alt="">
+            <section class="footer-grid__container footer-grid__container--grid-area-three">
+                <h3 class="footer-grid__title">Följ oss på sociala medier</h3>
+                <img class="footer-grid__img" src="./assets/logo/facebook-logo.svg" alt="Loggan för facebook">
+                <img class="footer-grid__img" src="./assets/logo/instagram-logo.svg" alt="Loggan för instagram">
+                <img class="footer-grid__img" src="./assets/logo/x-logo.svg" alt="Loggan för x">
+                <h3 class="footer-grid__title">Dela med dina vänner!</h3>
+                <img class="footer-grid__img" src="./assets/logo/facebook-logo.svg" alt="Loggan för facebook">
+                <img class="footer-grid__img" src="./assets/logo/instagram-logo.svg" alt="Loggan för instagram">
+                <img class="footer-grid__img" src="./assets/logo/x-logo.svg" alt="Loggan för x">
             </section>
         </footer>
     </div>
