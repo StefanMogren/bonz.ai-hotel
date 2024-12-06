@@ -491,7 +491,7 @@
     .call-to-action__grid {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    
     .call-to-action__unordered-list {
         display: none;
     }
@@ -504,32 +504,35 @@
         "date-to"
         "number-of-guests"
         "number-of-rooms";
-        } 
+    } 
     
     .call-to-action__fieldset {
         padding-top: 1rem;
         grid-column: span 2;
     }
-   
+    
     .call-to-action__input {
         height: 4rem;
     }
- 
-    #date-from {
+    
+    .call-to-action__fieldset--grid-area-one {
         grid-area: date-from;
     }
     
-    #date-to {
-        grid-area: date-to;
-    }
-    
-    #number-of-guests {
+    .call-to-action__fieldset--grid-area-two {
         grid-area: number-of-guests;
     }
     
-    #number-of-rooms {
+    .call-to-action__fieldset--grid-area-three {
+        grid-area: date-to;
+    }
+    
+    .call-to-action__fieldset--grid-area-four {
         grid-area: number-of-rooms;
     } 
     
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
     
 }
