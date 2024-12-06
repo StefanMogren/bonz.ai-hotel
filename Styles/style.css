@@ -488,9 +488,48 @@
         font-size: 2rem;
     }
     
-    /* .main-content__sub-title--font-size-1-5 {
-    font-size: 1.5rem;
-    } */
+    .call-to-action__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .call-to-action__unordered-list {
+        display: none;
+    }
+    
+    .call-to-action__inner-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "date-from"
+        "date-to"
+        "number-of-guests"
+        "number-of-rooms";
+        } 
+    
+    .call-to-action__fieldset {
+        padding-top: 1rem;
+        grid-column: span 2;
+    }
+   
+    .call-to-action__input {
+        height: 4rem;
+    }
+ 
+    #date-from {
+        grid-area: date-from;
+    }
+    
+    #date-to {
+        grid-area: date-to;
+    }
+    
+    #number-of-guests {
+        grid-area: number-of-guests;
+    }
+    
+    #number-of-rooms {
+        grid-area: number-of-rooms;
+    } 
     
     
 }
