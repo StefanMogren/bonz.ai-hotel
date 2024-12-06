@@ -4,27 +4,22 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 9,
-					"column": 3,
-					"label": "Header"
-				},
-				{
-					"line": 36,
+					"line": 38,
 					"column": 2,
 					"label": "Main"
 				},
 				{
-					"line": 59,
+					"line": 61,
 					"column": 8,
 					"label": "Call to action"
 				},
 				{
-					"line": 74,
+					"line": 76,
 					"column": 12,
 					"label": "Forms"
 				},
 				{
-					"line": 115,
+					"line": 117,
 					"column": 4,
 					"label": "Footer"
 				}

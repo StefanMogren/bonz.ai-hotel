@@ -28,11 +28,37 @@
     justify-content: space-around;
     list-style: none;
 }
+
+.header__list-item {
+    flex: 1 1 140px;
+    margin: 1rem;
+}
+
 .header__list-item-link {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
 }
+
+.header__button {
+    background: none;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-top: double;
+    border-bottom: double;
+    border-width: 20px;
+    justify-self: right;
+}
+
+.header__checkbox {
+    display: none;
+}
+
+.header__button--display {
+    display: none;
+}
+
 .wrapper {
     max-width: 1000px;
     margin-inline: auto;
@@ -102,6 +128,7 @@
 }
 
 
+/* Alla grid */
 /* Alla grid */
 .main-content__grid {
     display: grid;
@@ -377,41 +404,82 @@
 }
 
 @media screen and (max-width: 576px) {
+    
+    .header__unordered-list {
+        display: none;
+    }
+    
+    .header__list-item {
+        margin: 0;
+        flex: none;
+    }
+    
+    .header__button--display {
+        display: block;
+    }
+    
+    .header__checkbox {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 2.8rem;
+        width: 3rem;
+        height: 3rem;
+        opacity: 0;
+    }
+    
+    .header__checkbox:checked~.header__unordered-list {
+        position: absolute;
+        background-color: gainsboro;
+        width: 100%;
+        right: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+    
+    .header__list-item-link {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
     .main-content__grid {
         grid-template-columns: repeat(6, 1fr);
     }
-
+    
     .main-content__grid--grid-column-1 {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    
     .main-content__container--span-5 {
         grid-column: span 6;
     }
     .main-content__container--span-6 {
         grid-column: span 6;
     }
-
+    
     .main-content__container--span-7 {
         grid-column: span 6;
     }
-
+    
     .main-content__container--span-3 {
         grid-column: span 6;
     }
-
+    
     .main-content__button--span-12 {
         grid-column: span 6;
     }
-
+    
     .main-content__text--span-4 {
         grid-column: span 3;
     }
-
+    
     .main-content__button--font-size-2 {
         font-size: 4rem;
     }
-
+    
     .main-content__title {
         font-size: 3rem;
     }
@@ -419,10 +487,10 @@
     .main-content__sub-title {
         font-size: 2rem;
     }
-
+    
     /* .main-content__sub-title--font-size-1-5 {
-        font-size: 1.5rem;
+    font-size: 1.5rem;
     } */
-
-
+    
+    
 }
